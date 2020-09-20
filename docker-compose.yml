@@ -19,6 +19,16 @@ services:
             - mongodb
         networks:
             - yolo_webapp
+    
+    mongo:
+        image: mongo
+        container_name: mongodb
+        ports:
+            - 27017:27017
+        volumes:
+            - ./data:/data/db
+        networks:
+            - yolo_webapp
         
 
     
