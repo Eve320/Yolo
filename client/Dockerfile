@@ -1,5 +1,5 @@
 # Use a lighter version of Node as a parent image
-FROM node:6.10.0-alpine
+FROM node:10-alpine
 
 # Set the working directory to /client
 WORKDIR /client
