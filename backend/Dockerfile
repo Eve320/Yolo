@@ -10,9 +10,6 @@ COPY package*.json /backend/
 # install dependencies
 RUN npm install
 
-#Build app for production
-RUN npm run build
-
 # Copy the current directory contents into the container at /backend
 COPY . /backend/
 
