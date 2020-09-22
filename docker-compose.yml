@@ -1,7 +1,7 @@
-version: "2"
+version: "3"
 services:
     client:
-        container_name: yolo-client
+        container_name: yolo_client
         restart: unless-stopped
         build: client/
         ports:
@@ -11,7 +11,7 @@ services:
             - yolo_webapp
     
     backend:
-        container_name: yolo-backend
+        container_name: yolo_backend
         restart: unless-stopped
         build: backend/
         ports:
@@ -23,9 +23,10 @@ services:
     
     mongodb:
         image: mongo
+        restart: always
         container_name: mongodb
         ports:
-            - 27017:27017
+            - "27017:27017"
         volumes:
             - ./data:/data/db
         networks:
