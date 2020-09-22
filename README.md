@@ -1,3 +1,21 @@
+## Project set-up Instructions
+
+* In the terminal navigate to the directory you want to save the project
+
+* Clone the project https://github.com/Eve320/Yolo
+
+* Navigate into the created folder
+
+* Run  docker-compose build to build the images
+
+* Run docker-compose up to run the services
+
+## Dockerhub images
+
+* https://hub.docker.com/repository/docker/evengata/yolomy_backend
+
+* https://hub.docker.com/repository/docker/evengata/yolomy_client
+
 # Requirements
 Make sure that you have the following installed:
 - [node](https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-18-04) 
